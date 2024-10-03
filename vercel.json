@@ -2,13 +2,13 @@
   "rewrites": [{ "source": "/api/(.*)", "destination": "/api" }],
   "headers": [
         {
-          "source": "/(.*)",
+          "source": "/api/(.*)",
           "headers": [
             { "key": "Access-Control-Allow-Origin", "value": "*" }
           ]
         },
         {
-          "source": "/vercel_app_domain_name/(.*)",
+          "source": "/vercel_app_domain_name/api/(.*)",
           "headers": [
             { "key": "Access-Control-Allow-Origin", "value": "*" }
           ]
